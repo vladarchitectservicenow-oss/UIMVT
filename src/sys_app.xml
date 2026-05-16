@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-05-16 00:00:00">
+  <sys_app action="INSERT_OR_UPDATE">
+    <name>UI Migration Velocity Tracker</name>
+    <scope>x_uimvt</scope>
+    <version>1.0.0</version>
+    <vendor>Vladimir Kapustin (vladarchitect)</vendor>
+    <description>
+      Migration velocity dashboard for ServiceNow Australia (2026).
+      Tracks legacy UI → Next Experience progress per application.
+    </description>
+    <license>AGPL-3.0-only</license>
+    <active>true</active>
+    <enforce_license>log</enforce_license>
+    <js_level>helsinki_es5</js_level>
+    <owner>Vladimir Kapustin</owner>
+    <restrict_table_access>false</restrict_table_access>
+    <runtime_access_tracking>permissive</runtime_access_tracking>
+    <short_description>Legacy UI migration velocity tracker</short_description>
+  </sys_app>
+</unload>

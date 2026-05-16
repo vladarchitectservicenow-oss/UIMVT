@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-05-16 00:00:00">
+
+  <sys_db_object action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <label>Migration Snapshot</label>
+    <namespace>x_uimvt</namespace>
+    <create_access_controls>true</create_access_controls>
+  </sys_db_object>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <element>instance_name</element>
+    <internal_type>string</internal_type>
+    <max_length>100</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <element>scan_date</element>
+    <internal_type>glide_date_time</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <element>total_forms</element>
+    <internal_type>integer</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <element>legacy_forms</element>
+    <internal_type>integer</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <element>next_experience_forms</element>
+    <internal_type>integer</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <element>legacy_ui_macros</element>
+    <internal_type>integer</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <element>total_ui_macros</element>
+    <internal_type>integer</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_snapshot</name>
+    <element>agent_workspace_refs</element>
+    <internal_type>integer</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <!-- x_uimvt_app_score -->
+  <sys_db_object action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <label>App Score</label>
+    <namespace>x_uimvt</namespace>
+    <create_access_controls>true</create_access_controls>
+  </sys_db_object>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>app_scope</element>
+    <internal_type>string</internal_type>
+    <max_length>100</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>app_name</element>
+    <internal_type>string</internal_type>
+    <max_length>200</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>total_forms</element>
+    <internal_type>integer</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>migrated_forms</element>
+    <internal_type>integer</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>migration_pct</element>
+    <internal_type>float</internal_type>
+    <max_length>15</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>last_scan_date</element>
+    <internal_type>glide_date_time</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>velocity_score</element>
+    <internal_type>float</internal_type>
+    <max_length>15</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>predicted_ready_date</element>
+    <internal_type>glide_date</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_app_score</name>
+    <element>alert_threshold</element>
+    <internal_type>float</internal_type>
+    <max_length>15</max_length>
+  </sys_dictionary>
+
+  <!-- x_uimvt_velocity_log -->
+  <sys_db_object action="INSERT_OR_UPDATE">
+    <name>x_uimvt_velocity_log</name>
+    <label>Velocity Log</label>
+    <namespace>x_uimvt</namespace>
+    <create_access_controls>true</create_access_controls>
+  </sys_db_object>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_velocity_log</name>
+    <element>app_scope</element>
+    <internal_type>string</internal_type>
+    <max_length>100</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_velocity_log</name>
+    <element>scan_date</element>
+    <internal_type>glide_date_time</internal_type>
+    <max_length>40</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_velocity_log</name>
+    <element>migration_pct</element>
+    <internal_type>float</internal_type>
+    <max_length>15</max_length>
+  </sys_dictionary>
+
+  <sys_dictionary action="INSERT_OR_UPDATE">
+    <name>x_uimvt_velocity_log</name>
+    <element>velocity_weekly</element>
+    <internal_type>float</internal_type>
+    <max_length>15</max_length>
+  </sys_dictionary>
+
+</unload>
