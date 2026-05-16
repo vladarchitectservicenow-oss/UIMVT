@@ -1,21 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2026-05-16 00:00:00">
-  <sys_app action="INSERT_OR_UPDATE">
-    <name>UI Migration Velocity Tracker</name>
-    <scope>x_uimvt</scope>
-    <version>1.0.0</version>
-    <vendor>Vladimir Kapustin (vladarchitect)</vendor>
-    <description>
-      Migration velocity dashboard for ServiceNow Australia (2026).
-      Tracks legacy UI → Next Experience progress per application.
-    </description>
-    <license>AGPL-3.0-only</license>
-    <active>true</active>
-    <enforce_license>log</enforce_license>
-    <js_level>helsinki_es5</js_level>
-    <owner>Vladimir Kapustin</owner>
-    <restrict_table_access>false</restrict_table_access>
-    <runtime_access_tracking>permissive</runtime_access_tracking>
-    <short_description>Legacy UI migration velocity tracker</short_description>
-  </sys_app>
+<unload unload_date="2025-05-16 00:00:00">
+<sys_app action="INSERT_OR_UPDATE">
+<active>true</active>
+<can_edit_in_studio>true</can_edit_in_studio>
+<enforce_license>none</enforce_license>
+<guided_setup_guid/>
+<js_level>helsinki_es5</js_level>
+<licensable>true</licensable>
+<license_category>none</license_category>
+<license_model>none</license_model>
+<logo/>
+<menu display_value="UIMVT">x_uimvt</menu>
+<name>ServiceNow UI Migration Velocity Tracker</name>
+<private>false</private>
+<restrict_table_access>false</restrict_table_access>
+<runtime_access_tracking>permissive</runtime_access_tracking>
+<scope>x_uimvt</scope>
+<scoped_administration>false</scoped_administration>
+<short_description>Visibility for Zurich to Australia UI migration. Detects legacy vs modern UI assets.</short_description>
+<source>x_uimvt</source>
+<store_correlation_id/>
+<store_url/>
+<sys_class_name>sys_app</sys_class_name>
+<sys_code/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-05-16 00:00:00</sys_created_on>
+<sys_id>uimvt_app_001</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-05-16 00:00:00</sys_updated_on>
+<template/>
+<trackable>true</trackable>
+<user_role display_value="x_uimvt.user">uimvt_role_user</user_role>
+<vendor/>
+<vendor_prefix/>
+<version>1.0.0</version>
+</sys_app>
+<sys_app_application action="INSERT_OR_UPDATE">
+<active>true</active>
+<category>custom</category>
+<description>ServiceNow UI Migration Velocity Tracker</description>
+<device_type>browser</device_type>
+<hint>Track UI migration velocity and legacy asset inventory</hint>
+<name>ServiceNow UI Migration Velocity Tracker</name>
+<order>100</order>
+<roles>x_uimvt.user</roles>
+<sys_class_name>sys_app_application</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-05-16 00:00:00</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>uimvt_app_app_001</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>ServiceNow UI Migration Velocity Tracker</sys_name>
+<sys_overrides/>
+<sys_package display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_001</sys_package>
+<sys_policy/>
+<sys_scope display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_001</sys_scope>
+<sys_update_name>sys_app_application_uimvt_app_app_001</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-05-16 00:00:00</sys_updated_on>
+<title>ServiceNow UI Migration Velocity Tracker</title>
+<view_name/>
+</sys_app_application>
+<sys_app_module action="INSERT_OR_UPDATE">
+<active>true</active>
+<application display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_app_001</application>
+<assessment/>
+<content_page/>
+<device_type/>
+<filter/>
+<hint>View the migration velocity dashboard</hint>
+<homepage/>
+<image/>
+<link_type>DIRECT</link_type>
+<map_page/>
+<mobile_title>Dashboard</mobile_title>
+<mobile_view_name>Mobile</mobile_view_name>
+<name/>
+<order>100</order>
+<override_menu_roles>false</override_menu_roles>
+<query>x_uimvt_dashboard.do</query>
+<report/>
+<roles>x_uimvt.user</roles>
+<survey/>
+<survey_overwrite>true</survey_overwrite>
+<sys_class_name>sys_app_module</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-05-16 00:00:00</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>uimvt_mod_dash_001</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>Dashboard</sys_name>
+<sys_overrides/>
+<sys_package display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_001</sys_package>
+<sys_policy/>
+<sys_scope display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_001</sys_scope>
+<sys_update_name>sys_app_module_uimvt_mod_dash_001</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-05-16 00:00:00</sys_updated_on>
+<timeline_page/>
+<title>Dashboard</title>
+<uncancelable>false</uncancelable>
+<view_name/>
+<window_name/>
+</sys_app_module>
+<sys_app_module action="INSERT_OR_UPDATE">
+<active>true</active>
+<application display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_app_001</application>
+<assessment/>
+<content_page/>
+<device_type/>
+<filter/>
+<hint>Run scanner and review results</hint>
+<homepage/>
+<image/>
+<link_type>DIRECT</link_type>
+<map_page/>
+<mobile_title>Scanner</mobile_title>
+<mobile_view_name>Mobile</mobile_view_name>
+<name/>
+<order>200</order>
+<override_menu_roles>false</override_menu_roles>
+<query>x_uimvt_scanner.do</query>
+<report/>
+<roles>x_uimvt.admin</roles>
+<survey/>
+<survey_overwrite>true</survey_overwrite>
+<sys_class_name>sys_app_module</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-05-16 00:00:00</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>uimvt_mod_scan_001</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>Scanner</sys_name>
+<sys_overrides/>
+<sys_package display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_001</sys_package>
+<sys_policy/>
+<sys_scope display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_001</sys_scope>
+<sys_update_name>sys_app_module_uimvt_mod_scan_001</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-05-16 00:00:00</sys_updated_on>
+<timeline_page/>
+<title>Scanner</title>
+<uncancelable>false</uncancelable>
+<view_name/>
+<window_name/>
+</sys_app_module>
+<sys_app_module action="INSERT_OR_UPDATE">
+<active>true</active>
+<application display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_app_001</application>
+<assessment/>
+<content_page/>
+<device_type/>
+<filter/>
+<hint>View alerts and thresholds</hint>
+<homepage/>
+<image/>
+<link_type>DIRECT</link_type>
+<map_page/>
+<mobile_title>Alerts</mobile_title>
+<mobile_view_name>Mobile</mobile_view_name>
+<name/>
+<order>300</order>
+<override_menu_roles>false</override_menu_roles>
+<query>x_uimvt_alerts.do</query>
+<report/>
+<roles>x_uimvt.admin</roles>
+<survey/>
+<survey_overwrite>true</survey_overwrite>
+<sys_class_name>sys_app_module</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-05-16 00:00:00</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>uimvt_mod_alert_001</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>Alerts</sys_name>
+<sys_overrides/>
+<sys_package display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_001</sys_package>
+<sys_policy/>
+<sys_scope display_value="ServiceNow UI Migration Velocity Tracker">uimvt_app_001</sys_scope>
+<sys_update_name>sys_app_module_uimvt_mod_alert_001</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-05-16 00:00:00</sys_updated_on>
+<timeline_page/>
+<title>Alerts</title>
+<uncancelable>false</uncancelable>
+<view_name/>
+<window_name/>
+</sys_app_module>
 </unload>
