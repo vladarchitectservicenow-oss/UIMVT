@@ -1,0 +1,26 @@
+UIMVT Test Execution Log
+Timestamp: 2026-05-16T23:18:13.311Z
+Scenarios defined: 14
+Passed: 12
+Failed: 3
+
+PASS | SOP-001 | Legacy UI Detection — Forms
+PASS | SOP-002 | Legacy UI Detection — Lists
+PASS | SOP-003 | Legacy UI Detection — Macros
+PASS | SOP-004 | Legacy UI Detection — Modules
+PASS | SOP-005 | Velocity Calculation — Multi-Window
+PASS | SOP-006 | Predicted ETA — Stalled
+PASS | SOP-007 | Predicted ETA — Regression
+FAIL | SOP-008 | Dashboard Export — HTML
+  ERROR: Error: should not contain undefined: expected to contain "undefined" in "<!DOCTYPE html> | <html> | <head>
+PASS | SOP-009 | Dashboard Export — JSON
+PASS | SOP-010 | Dashboard Export — CSV
+PASS | SOP-011 | Alert Firing — Threshold Breach
+FAIL | SOP-012 | Empty Instance Handling
+  ERROR: Error: eta text empty: expected to contain "nothing to migrate" in "Migration complete" |     at assertContains (/home/crixus/UIMVT/tests/run_tests.js:48:11) |     at /home/crixus/UIMVT/tests/run_tests.js:270:3
+PASS | SOP-013 | 100% Migrated Instance
+PASS | SOP-014 | Mixed Scope — Some Apps Migrated, Others Not
+FAIL | SOP-015 | Invalid Alert Threshold Configuration
+  ERROR: Error: null threshold throws: expected true, got false |     at assertEq (/home/crixus/UIMVT/tests/run_tests.js:42:11) |     at /home/crixus/UIMVT/tests/run_tests.js:335:3
+
+RESULT: SOME FAILURES

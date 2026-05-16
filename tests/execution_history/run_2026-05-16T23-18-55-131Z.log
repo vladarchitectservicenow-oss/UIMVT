@@ -1,0 +1,23 @@
+UIMVT Test Execution Log
+Timestamp: 2026-05-16T23:18:55.131Z
+Scenarios defined: 14
+Passed: 15
+Failed: 0
+
+PASS | SOP-001 | Legacy UI Detection — Forms
+PASS | SOP-002 | Legacy UI Detection — Lists
+PASS | SOP-003 | Legacy UI Detection — Macros
+PASS | SOP-004 | Legacy UI Detection — Modules
+PASS | SOP-005 | Velocity Calculation — Multi-Window
+PASS | SOP-006 | Predicted ETA — Stalled
+PASS | SOP-007 | Predicted ETA — Regression
+PASS | SOP-008 | Dashboard Export — HTML
+PASS | SOP-009 | Dashboard Export — JSON
+PASS | SOP-010 | Dashboard Export — CSV
+PASS | SOP-011 | Alert Firing — Threshold Breach
+PASS | SOP-012 | Empty Instance Handling
+PASS | SOP-013 | 100% Migrated Instance
+PASS | SOP-014 | Mixed Scope — Some Apps Migrated, Others Not
+PASS | SOP-015 | Invalid Alert Threshold Configuration
+
+RESULT: SOME FAILURES
